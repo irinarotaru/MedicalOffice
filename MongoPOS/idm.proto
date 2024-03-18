@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+message InfoAuth {
+  string id = 1;
+  string role = 2;
+  string username = 3;
+  string password = 4;
+}
+
+message TokenResponse {
+  string token = 1;
+}
+
+message MessageResponse {
+  string response = 1;
+}
+
+service TokenAuth{
+  rpc GenerateJwt(InfoAuth) returns (TokenResponse);
+}
+
+service TokenValidate{
+  rpc ValidateJwt(TokenResponse) returns (MessageResponse);
+}
+
+service TokenDestroy {
+  rpc DestroyJwt(TokenResponse) returns (MessageResponse);
+}

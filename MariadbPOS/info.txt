@@ -1,0 +1,24 @@
+patients = [
+    {'cnp':'5001211446522', 'id_user': '1', 'nume':'Popescu', 'prenume':'Ion','email':'ionpopescu@gmail.com',
+     'telefon': '0766342215','data_nasterii':'2000-12-11','is_active':'True'},
+    {'cnp': '2991111446500', 'id_user': '2', 'nume': 'Popa', 'prenume': 'Maria', 'email': 'mariap@gmail.com',
+     'telefon': '0764342615', 'data_nasterii': '1999-11-11', 'is_active': 'False'},
+    {'cnp': '6010211446532', 'id_user':'3', 'nume': 'Andries', 'prenume': 'Andreea', 'email': 'aandreea2@gmail.com',
+     'telefon': '0751342244', 'data_nasterii': '2001-11-11', 'is_active': 'True'}
+]
+
+
+doctors = [
+    {'id_doctor': '1', 'id_user': '4', 'nume': 'Mandru', 'prenume': 'David', 'email': 'madruld@gmail.com',
+     'telefon':'0723456789', 'specializare': 'Cardiologie'},
+    {'id_doctor': '2', 'id_user': '5', 'nume': 'Savin', 'prenume': 'Miruna', 'email': 'mirusav@gmail.com',
+     'telefon':'0724456789', 'specializare': 'Infectioase'},
+    {'id_doctor': '3', 'id_user': '6', 'nume': 'Pantir', 'prenume': 'Denis', 'email': 'denispantir@gmail.com',
+     'telefon':'0723626789', 'specializare': 'Alergologie'}
+]
+
+appointments = [
+    {'id_pacient': '6010211446532', 'id_doctor': '1', 'data':'6.11.2023', 'status': 'onorata'},
+    {'id_pacient': '2991111446500', 'id_doctor': '3', 'data': '2.11.2023', 'status': 'anulata'},
+    {'id_pacient': '2991111446500', 'id_doctor': '1', 'data': '1.11.2023', 'status': 'onorata'}
+]
